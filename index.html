@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>हिंदवी स्वराज्य क्विझ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="welcome-screen">
+        <img src="shivaji maharaj sea.jpeg" alt="Shivaji Maharaj" class="hero-img">
+        <h1>🔰 हिंदवी स्वराज्य प्रश्नमंजुषा 🔰</h1>
+        <p>मराठा साम्राज्याच्या शौर्यगाथेवर आधारित एक रोमांचक प्रश्नमंजुषा</p>
+        <button id="start-btn">क्विझ सुरू करा</button>
+    </div>
+
+    <div class="level-screen" id="level-screen" style="display:none;">
+        <h2 id="level-title">Level 1</h2>
+        <button id="start-level-btn">सुरू करा</button>
+    </div>
+
+
+    <div class="quiz-container" style="display: none;">
+        <h2 id="question">प्रश्न येथे दिसेल</h2>
+        <h4 id="timer">उर्वरित वेळ: 30 सेकंद</h4>
+        <div id="options">
+            <!-- Options will come here from JS -->
+        </div>
+        <!-- <button id="play-again-btn" style="display: none; margin-top: 20px;">🔁 पुन्हा खेळा</button> -->
+    </div>
+
+    <div class="result-container" id="result-container" style="display: none;">
+        <!-- <h2>🎉 तुमचा स्कोअर: <span id="score"></span></h2> -->
+        <h3 id="badge-name"></h3>
+        <p id="badge-desc"></p>
+        <button id="play-again-btn" style="display: none; margin-top: 20px;">🔁 पुन्हा खेळा</button>
+    </div>
+
+
+    <audio id="background-music" src="bg-music.mp3" loop></audio>
+    <button id="toggle-music-btn" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">🔊 संगीत बंद
+        करा</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
