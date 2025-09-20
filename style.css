@@ -1,0 +1,192 @@
+body {
+    font-family: "Tiro Devanagari Marathi", serif;
+    background-color: #fff8e1;
+    background: linear-gradient(to right, #ff9933, #ff9933);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+.hero-img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.welcome-screen,
+.quiz-container,
+.result-container {
+    display: none;
+    padding: 20px;
+}
+
+.welcome-screen {
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    color: #2c3e55;
+} 
+
+/* h1 {
+    color: #d84315;
+} */
+
+img {
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#start-btn,
+#next-btn,
+#play-again-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 20px auto;
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+#start-btn:hover,
+#next-btn:hover,
+#play-again-btn:hover {
+    background-color: #e64a19;
+}
+
+#question {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #3e2723;
+    font-weight: bold;
+}
+
+#options button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #ffe0b2;
+    border: 2px solid #ffb74d;
+    cursor: pointer;
+}
+
+#options button:hover {
+    background-color: #ffcc80;
+}
+
+#timer {
+    font-size: 20px;
+    color: #bf360c;
+    margin-bottom: 10px;
+}
+.correct-answer {
+    background-color: #c8e6c9 !important; /* हलका हरा */
+    border-color: #2e7d32 !important;
+    color: #1b5e20;
+    font-weight: bold;
+}
+
+.wrong-answer {
+    background-color: #ffcdd2 !important; /* हलका लाल */
+    border-color: #c62828 !important;
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+#badge-name {
+    font-size: 26px;
+    color: #2e7d32;
+    margin-top: 20px;
+}
+
+#badge-desc {
+    font-size: 20px;
+    color: #4e342e;
+    margin-bottom: 20px;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* पर्याय (options) */
+#options button {
+    font-size: 20px;
+    padding: 12px 18px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+/* स्कोअर स्क्रीन */
+#score {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+#score strong {
+    font-size: 26px;
+    color: #2e7d32;
+}
+
+#score h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#score p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#result-container button {
+    background-color: #b06461;  /* Orange */
+    color: rgb(255, 246, 246);
+    font-size: 18px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+#result-container button:hover {
+    background-color: #e68900;
+}
+
+.answer-info {
+    margin-top: 10px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-style: italic;
+}
